@@ -153,6 +153,30 @@ h2 {
 .about-body p { margin-bottom: 1.5rem; color: var(--ink-70); font-size: 1.04rem; }
 .about-body p:last-child { color: var(--ink); }
 
+/* ---------- positioning ---------- */
+.positioning-intro {
+  margin: -1.25rem 0 2.25rem;
+  color: var(--ink-70); font-size: 1.02rem; max-width: 62ch;
+}
+
+.lens { padding: 2rem 0; border-top: 1px solid var(--ink-12); max-width: 760px; }
+.lens:last-of-type { border-bottom: 1px solid var(--ink-12); }
+
+.lens h3 {
+  font-family: var(--display); font-weight: 500; font-size: 1.4rem;
+  letter-spacing: -0.01em; margin-bottom: 0.7rem;
+}
+
+.lens p { color: var(--ink-70); font-size: 0.99rem; max-width: 68ch; margin-bottom: 0.9rem; }
+.lens p:last-child { margin-bottom: 0; }
+
+.lens-proof { font-size: 0.93rem !important; color: var(--ink-50) !important; }
+.lens-proof strong {
+  font-family: var(--ui); font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--blue-70);
+}
+
 /* ---------- journey ---------- */
 .timeline { border-left: 1.5px solid var(--ink-12); padding-left: 2.25rem; max-width: 720px; }
 
