@@ -116,6 +116,29 @@ body {
   color: var(--ink-70);
 }
 
+.hero-facts {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 0.5rem 1.4rem; margin-top: 1.6rem;
+}
+
+.fact {
+  font-family: var(--ui); font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.04em; color: var(--ink-70);
+}
+
+.fact-status { color: var(--ink); font-weight: 600; display: inline-flex; align-items: center; gap: 0.45rem; }
+
+.fact-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #3e8e5a; box-shadow: 0 0 0 0 rgba(62, 142, 90, 0.5);
+  animation: pulse 2.2s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(62, 142, 90, 0.45); }
+  70% { box-shadow: 0 0 0 8px rgba(62, 142, 90, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(62, 142, 90, 0); }
+}
+
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
 
 .hero-photo { margin: 0; justify-self: end; }
@@ -226,6 +249,12 @@ h2 {
 .essay p { color: var(--ink-70); font-size: 0.99rem; margin-bottom: 1rem; max-width: 66ch; }
 .essay p:last-child { margin-bottom: 0; }
 
+.essay-link a {
+  font-family: var(--ui); font-size: 0.82rem; font-weight: 600;
+  letter-spacing: 0.06em; color: var(--blue); text-decoration: none;
+}
+.essay-link a:hover { text-decoration: underline; }
+
 .section-footnote { margin-top: 2rem; font-size: 0.95rem; color: var(--ink-50); }
 .section-footnote a { color: var(--blue); text-decoration: none; }
 .section-footnote a:hover { text-decoration: underline; }
@@ -300,7 +329,7 @@ h2 {
 
 .contact-line { color: var(--ink-70); font-size: 1.02rem; margin-bottom: 1.75rem; }
 
-.contact-linkedin { margin-bottom: 2.75rem; }
+.contact-ctas { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.75rem; }
 
 .contact-form { max-width: 560px; display: flex; flex-direction: column; }
 
